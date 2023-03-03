@@ -1,0 +1,21 @@
+version: "2.16"
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./new_page:/app/data
+    networks:
+      - bridge_network_tp6_part1
+  db:
+    image: mongo
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - bridge_network_tp6_part1
+volumes:
+  mongodb_data:
+networks:
+  bridge_network_tp6_part1:
+    driver: bridge
