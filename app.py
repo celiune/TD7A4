@@ -19,10 +19,10 @@ db = client["Database"]
 # Get a reference to the collection users
 collection = db["users"]
 
-posts = [{ "nom": "Céline Liu", "username": "cece", "password": "$2b$10$EBAr9MAOPPldOCsDnmgKl.RuoYqhit/.BZNaX.w4NHqeeZ/IrWEiu" },  
-         { "nom": "Laura Llinares", "username": "laulau", "password": "$2b$10$daIsYtG7gYcK5Jw2VvOsgubenJINBXWZ3upeg4AOGKSDhVia/O7jq" },     
-         { "nom": "Jolyane Makarison", "username": "jojo", "password": "$2b$10$enYQIgNhXs4LJBXLAbd3Gedphy5QISAS1p590lAHFQ0p6vHGr1YhC" },
-         { "nom": "Timothé", "username": "timothe", "password": "$2b$10$WRKeDUZW9MljH4iuAaby3Ohv6h6AakF4jTiTDDvacR0rF3jtzyRdG" } ]
+posts = [{ "nom": "Céline", "username": "cece", "password": "$2b$10$EBAr9MAOPPldOCsDnmgKl.RuoYqhit/.BZNaX.w4NHqeeZ/IrWEiu" },  
+         { "nom": "Laura", "username": "laulau", "password": "$2b$10$daIsYtG7gYcK5Jw2VvOsgubenJINBXWZ3upeg4AOGKSDhVia/O7jq" },     
+         { "nom": "Jolyane", "username": "jojo", "password": "$2b$10$enYQIgNhXs4LJBXLAbd3Gedphy5QISAS1p590lAHFQ0p6vHGr1YhC" },
+         { "nom": "Timothée", "username": "timothee", "password": "$2b$10$WRKeDUZW9MljH4iuAaby3Ohv6h6AakF4jTiTDDvacR0rF3jtzyRdG" } ]
 
 collection.insert_many(posts)
 
