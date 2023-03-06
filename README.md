@@ -66,4 +66,7 @@ docker compose up -d
 ## :rocket: Let's go
 The flask app is available on [http://localhost:5000](http://localhost:5000), you can go to [/text](http://localhost:5000/text) endpoint to check the content of the file file.txt. Any changes in the content of this file will be shown by refreshing the web page.
 
-You can also verify mounts : docker inspect <your_mongo_container_name>
+You can also verify mounts : 
+```
+docker inspect <your_mongo_container_name>
+```
